@@ -322,6 +322,7 @@
       type: "POST",
       data: { id: id },
       success: function (res) {
+        console.log(res , "res")
         if (res.success == true) {
           $("#" + id).remove();
           $("#deleteChatModal").modal("hide");
@@ -348,8 +349,6 @@
   $("#update-chat-form").submit(function (event) {
     event.preventDefault();
 
-    console.log("its working");
-
     var id = $("#edit-message-id").val();
     var msg = $("#update-message").val();
 
@@ -358,6 +357,7 @@
       type: "POST",
       data: { id: id, message: msg },
       success: function (res) {
+
         if (res.success == true) {
           $("#editChatModal").modal("hide");
           $("#" + id)
