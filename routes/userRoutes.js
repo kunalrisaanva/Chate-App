@@ -55,7 +55,7 @@ const auth =  require("../middlewares/auth");
  user_routes.get("/register",auth.isLogout,userController.registerLoad)
  user_routes.post("/register",upload.single('image'),userController.register)
  
- user_routes.get('/',auth.isLogout,userController.loadLoading);
+//  user_routes.get('/',auth.isLogout,userController.loadLoading);
  user_routes.post("/",userController.Login);
  
  user_routes.get("/logout",auth.isLogin,userController.logut);

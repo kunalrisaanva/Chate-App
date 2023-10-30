@@ -64,6 +64,7 @@ const Login = async(req,res) => {
           const isMatch = await bcrypt.compare(password,userData.password);
            if(isMatch){
                 req.session.user = userData;
+                
                 res.redirect("/dashboard");
            }else{
             res.render('login',{message:" password is incorrect"});
