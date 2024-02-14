@@ -19,7 +19,7 @@ We are building a chat website with all the features send message , update chat,
 
 - **Node.js and Express.js**: Building the server-side infrastructure.
 - **MongoDB and Mongoose**: Efficiently managing and interacting with the database.
-- **Socket IO**: Safeguarding user passwords with industry-standard hashing.
+- **Socket IO**: Socket.IO facilitates real-time, bidirectional communication between clients and servers. 
 - **Bcrypt**: Safeguarding user passwords with industry-standard hashing.
 
 ---
