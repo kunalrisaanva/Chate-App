@@ -86,7 +86,7 @@ usp.on('connection',async function(socket){
 
  
 // port listening  
-
+console.log(process.env.port)
 http.listen(process.env.port,() => {
 console.log(`server is running on PORT ${process.env.port} 
 ${url}`)})

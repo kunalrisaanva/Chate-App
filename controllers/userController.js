@@ -78,8 +78,6 @@ const Login = async(req,res) => {
 }
 
 
-
-
 const logut = async(req,res) => {
     try {
         req.session.destroy()
